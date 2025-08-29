@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A. Javeed Ali | Portfolio</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 15px 50px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+      transition: 0.3s;
+    }
+
+    .nav-links li a:hover {
+      background: #ff9800;
+      border-radius: 5px;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, #3a6186, #89253e);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .highlight {
+      color: #ff9800;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ff9800;
+      color: #fff;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e67e22;
+    }
+
+    section {
+      padding: 80px 50px;
+      text-align: center;
+    }
+
+    .about ul {
+      list-style: none;
+      margin-top: 15px;
+    }
+
+    .skills .skill-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .skill {
+      background: #eee;
+      padding: 12px 20px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      background: #ff9800;
+      color: #fff;
+    }
+
+    .projects .project-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #f9f9f9;
+      padding: 20px;
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .contact input, .contact textarea {
+      margin: 8px 0;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      margin-top: 10px;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #222;
+        border-radius: 8px;
+        padding: 10px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .projects .project-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="logo">Javeed Ali</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">A. Javeed Ali</span></h1>
+      <p>BCA 2nd Year Student | Passionate about Web & Software Development</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm <strong>A. Javeed Ali</strong>, currently pursuing my <b>Bachelor of Computer Applications (BCA)</b> in 2nd year.  
+      I am enthusiastic about learning programming, developing projects, and exploring new technologies in the field of computer science.  
+    </p>
+    <ul class="info-list">
+      <li><strong>Department:</strong> BCA</li>
+      <li><strong>Year:</strong> 2nd Year</li>
+      <li><strong>Email:</strong> jacksparow4872@gmail.com</li>
+      <li><strong>Phone:</strong> 9514769784</li>
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skill-container">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">C Programming</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3>Student Management System</h3>
+        <p>A console-based project in Python to manage student records.</p>
+      </div>
+      <div class="project-card">
+        <h3>Simple Calculator</h3>
+        <p>A web-based calculator app built using JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p class="contact-info">📧 Email: jacksparow4872@gmail.com | 📞 Phone: 9514769784</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 A. Javeed Ali | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    // Contact Form Submit Alert
+    const form = document.querySelector("form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Thank you! Your message has been sent.");
+      form.reset();
+    });
+  </script>
+</body>
+</html>
